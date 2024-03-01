@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon-32x32.png" />
+    <title>Kimberly L Palmer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--Website Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Noto+Sans+Mono:wght@100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Protest+Revolution&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body class="blog-page">
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a a href="aboutme.html">About Me</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        
+      </ul>
+    </nav>
+    <main>      
+      <div class="blog-container">
+        <h1>Kimberly L Palmer</h1>
+        <h2>My <a href="https://medium.com/@kimberlylpalmer">Medium</a> Blog</h2>
+        <div id="medium-posts">Loading posts...</div>
+
+          <script>
+            async function fetchMediumPosts() {
+                const feedUrl = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@kimberlylpalmer';
+                const response = await fetch(feedUrl);
+                const data = await response.json();
+                let htmlContent = '';
+
+                data.items.forEach(item => {
+                    htmlContent += `
+                        <div class="post">
+                            <h2><a href="${item.link}" target="_blank">${item.title}</a></h2>
+                            <p>${item.pubDate}</p>
+                            <p>${item.description}</p>
+                        </div>
+                    `;
+                });
+
+                document.getElementById('medium-posts').innerHTML = htmlContent;
+            }
+
+            fetchMediumPosts();
+          </script>
+      </div>
+    </main>
+    <footer>
+      <p>Copyright © Kimberly L Palmer</p>
+      <a href="https://www.linkedin.com/in/kimberly-l-palmer/" target="_blank">
+        <img src="./assets/In-Blue-21.png" />
+      </a>
+      <a href="https://github.com/kimberlylpalmer" target="_blank">
+        <img src="./assets/github-mark.svg" class="github" />
+      </a>
+      <a href="mailto:kimberly.l.palmer@gmail.com" target="_blank">
+        <img src="./assets/email.png" class="email" />
+      </a>
+    </footer>
+  </body>
+</html>
