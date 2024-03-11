@@ -1,0 +1,204 @@
+body {
+    background-color: #85D2D0;
+    font-family: "Big Shoulders Display, sans serif";
+}
+
+
+#title-header {
+    display: flex;
+    gap: 1px;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-image {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 100%;
+    height: auto;
+}
+
+
+#daily-advice {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;    
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    background-color: #ffffff;
+    border-radius:100px;
+    /* border: 3px black solid; */
+    font-family: "Big Shoulders Display";
+    font-size: 50px;
+    color: #887BB0;
+    font-weight:bolder;
+    text-align: center;
+    /* text-shadow: */
+    /* -1px -1px 0 #000; */
+}
+
+#container {
+    /* height: 75hv; */
+    margin-top: 25px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    grid-template-rows: 1fr;
+    /* border: 3px blue solid; */
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size:20px;
+    font-weight: 700;
+    color:#887BB0
+}
+
+
+
+#form-div {
+    display: grid;
+    background-color: #fff;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-rows:1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;    
+    border: 5px white solid;
+    border-radius: 25px;
+    grid-column: span 1;
+    grid-row:span 1;
+}
+#form-input-label {
+    display: flex;
+    grid-column: span 1;
+    /* border: 3px solid black; */
+    
+}
+#form-title {
+    /* border: 3px black solid; */
+    display:flex;
+    grid-column: span 4;
+    align-content:end;
+    font-size: 30px;
+}
+
+#new-task {
+    display: flex;
+    background-color: #85D2D0;
+    /* border: 3px green solid; */
+    grid-column: span 1;
+    grid-row: span 2;
+    height:25px;
+    width: 300px;
+    border-radius: 5px;
+    font-family: 'Big Shoulders Display', sans-serif; 
+    font-size: 20px   
+}
+
+#submit-new-task {
+    background-color:aquamarine;
+    /* border: 3px #887BB0 solid; */
+    border: 0px aquamarine solid;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px #887BB0;
+    color: #887BB0;
+    font-family: 'Big Shoulders Display', sans-serif; 
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 5px 20px 5px 20px;
+    /* text-shadow: -1px -1px 0 #000; */
+}
+
+#motive-div {
+    display: flex;
+    /* border: 5px teal solid; */
+    background-color: #fff;
+    border-radius: 25px;
+    grid-column: span 2;
+    grid-row:span 1;
+    align-items: center;
+    justify-content: center;    
+}
+#motivational-phrase {
+    font-size: 3rem;;
+}
+
+#main-task-list-div {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    grid-column: span 1;
+    grid-row:span 2;
+    border: 5px #887BB0 solid;
+    box-shadow: 1px 1px 5px 5px #887BB0;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#main-task-list-header {
+    font-size: 30px;
+}
+
+
+#completed-task-list-div {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    grid-column: span 1;
+    grid-row:span 2;
+    border: 5px aquamarine solid;
+    box-shadow: 1px 1px 5px 5px aquamarine;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: flex-start;
+}
+#suggested-task-div {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    grid-column: span 1;
+    grid-row:span 2;
+    border: 5px #01B9CC solid;
+    box-shadow: 1px 1px 5px 5px #01B9CC;
+    border-radius: 25px;
+    align-items:center;
+}
+
+#suggested-task-list-heading {
+    margin-bottom: 1px;
+    font-size: 30px;
+    
+}
+
+#instructions-suggested-tasks {
+    margin:0px;
+    font-size:15px;
+}
+
+#complete-tasks {
+    font-size: 30px;
+    margin-bottom: 5px;
+    
+}
+
+#taskLi {
+    margin-bottom: 10px;
+}
+
+#completed-btn {
+    background-color:aquamarine;
+    /* border: 3px #887BB0 solid; */
+    border: 0px aquamarine solid;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px #887BB0;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 20px; 
+    color: #887bb0
+}
