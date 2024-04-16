@@ -1,0 +1,48 @@
+{
+  "appointments": [
+    {
+      "id": 1,
+      "title": "Big Meeting",
+      "start": "2023-12-12T10:00:00",
+      "end": "2023-12-12T11:00:00",
+      "contact": ""
+    },
+    {
+      "title": "Doctor's Appointment",
+      "start": "2023-12-01T22:50:00.000Z",
+      "end": "2023-12-02T00:50:00.000Z",
+      "contact": "Holly Wheeler",
+      "id": 2
+    },
+    {
+      "title": "Presentations",
+      "start": "2023-12-08T19:00:00.000Z",
+      "end": "2023-12-08T21:00:00.000Z",
+      "contact": "Holly",
+      "id": 3
+    }
+  ],
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Holly Wheeler",
+      "phone": "(510) 926-2776",
+      "email": "hollyawheeler.96@gmail.com",
+      "address": "123 First Avenue, Oakland CA 94608"
+    },
+    {
+      "name": "Nadia Ting",
+      "phone": "(510) 555-0194",
+      "email": "fakeemail@gmail.com",
+      "address": "456 First Avenue, Oakland CA 94608",
+      "id": 2
+    },
+    {
+      "name": "Elle Burleigh",
+      "phone": "(510) 555-2875",
+      "email": "anotherfakeemail@gmail.com",
+      "address": "789 First Avenue, Oakland CA 94608",
+      "id": 3
+    }
+  ]
+}
